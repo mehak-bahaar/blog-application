@@ -1,0 +1,92 @@
+
+.link:hover {
+    scale: 1.05;
+    transition: scale 0.1s ease
+}
+ .socialIcons:hover {
+    scale: 1.1;
+    transition: scale 0.1s ease
+}
+.socialIcons:active{
+    scale:0.9;
+    transition: scale 0.1s ease;
+}
+.link:active{
+    scale:0.9;
+    transition: scale 0.1s ease;
+}
+.scaleAnimation{
+    margin-right: 1.25rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1536px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.social{
+    flex: 1;
+}
+.socialIcons{
+    margin:0 8px ;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 32px;
+    flex: 1;
+    text-align: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px, 0; 
+    gap: 8px;
+    flex: 1;
+    font-size: 20px;
+}
+@media screen and (max-width:1280px) {
+
+    .links{
+        font-size: 17px;
+        gap: 5px;
+    }
+    .logo{
+        font-size: 28px;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+    .social{
+        display: none;
+    }
+    .logo{
+        text-align: left;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+    .social{
+        display: none;
+    }
+    .logo{
+        text-align: left;
+    }
+    .links{
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    
+}
+@media screen and (max-width:640px) {
+.link{
+    display: none;
+}
+    
+}
